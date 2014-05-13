@@ -211,3 +211,44 @@ to (19.1.0):
          <artifactId>compatibility-v4</artifactId>
          <version>19.1.0</version>
       </dependency
+
+
+TPM 5/13/14
+
+Other fun things I found.  You can sideload a compile apk from here:
+	https://github.com/NineWorlds/serenity-android/wiki/Downloads
+
+While trying to follow the Eclipse instructions, in addition to the environment variables listed above,
+I did the following:
+
+Eclipse in Android SDK (Juno)
+
+http://stackoverflow.com/questions/17283486/where-is-eclipse-marketplace-in-android-sdk
+
+Try this...
+1.	Go to Help,
+2.	Then click Install New Software,
+3.	Press Add,
+4.	Name = "your option" and Location = "http://download.eclipse.org/releases/juno" then press OK,
+5.	Select Marketplace client from General Tools section
+6.	Accept all the terms and conditions then press install.
+7.	Then restart the ADT.
+
+Once installed: Help->Eclipse Marketplace…
+Search for m2eclipse
+And the package Maven Integration for Eclipse WTP (Juno) contains: m2e-wtp, maven, wtp, m2e, m2eclipse
+
+According to the serenity-android, I only need m2e, m2eclipse and an m2e-android (that wasn’t listed).
+
+Not sure if I need m2e-android…
+
+
+I also tried converting some eclipse projects into maven projects:
+
+	http://wiki.eclipse.org/Converting_Eclipse_Java_Project_to_Maven_Project
+
+importing a maven project into eclipse
+
+	http://stackoverflow.com/questions/2061094/importing-maven-project-into-eclipse
+
+With not much luck.
