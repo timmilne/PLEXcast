@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
    <modelVersion>4.0.0</modelVersion>
-   <name>PlexApp Google TV Client Parent</name>
+   <name>PLEXcast Client Parent</name>
 
    <groupId>us.nineworlds.serenity</groupId>
-   <artifactId>serenity-parent</artifactId>
+   <artifactId>plexcast-parent</artifactId>
    <version>1.7.4</version>
    <packaging>pom</packaging>
 
    <modules>
       <module>plexapp-rest-library</module>
       <module>android-menudrawer</module>
-      <module>serenity-app</module>
       <module>subtitle-converter</module>
+      <module>plexcast-app</module>
    </modules>
 
    <properties>
@@ -81,9 +81,9 @@
    </build>
 
    <scm>
-      <connection>scm:git:git@github.com:NineWorlds/serenity-android.git</connection>
-      <developerConnection>scm:git:git@github.com:NineWorlds/serenity-android.git</developerConnection>
-      <url>https://github.com/nineworlds/serenity-android</url>
+      <connection>scm:git:git@github.com:timmilne/PLEXcast.git</connection>
+      <developerConnection>scm:git:git@github.com:timmilne/PLEXcast.git</developerConnection>
+      <url>https://github.com/timmilne/PLEXcast</url>
       <tag>1.2.2</tag>
    </scm>
 

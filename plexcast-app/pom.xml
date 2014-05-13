@@ -1,20 +1,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
    <modelVersion>4.0.0</modelVersion>
-   <name>Plexapp Android Client</name>
+   <name>PLEXcast Android Client</name>
    <parent>
       <groupId>us.nineworlds.serenity</groupId>
-      <artifactId>serenity-parent</artifactId>
+      <artifactId>plexcast-parent</artifactId>
       <version>1.7.4</version>
    </parent>
 
-   <artifactId>serenity-app</artifactId>
+   <artifactId>plexcast-app</artifactId>
    <packaging>apk</packaging>
 
    <properties>
       <android-version>4.2.2_r2</android-version>
    </properties>
 
+   <prerequisites>
+      <maven>3.1.1</maven>
+   </prerequisites>
 
    <dependencies>
       <dependency>
@@ -30,7 +33,7 @@
       <dependency>
          <groupId>android.support</groupId>
          <artifactId>compatibility-v4</artifactId>
-         <version>19.0.1</version>
+         <version>19.1.0</version>
       </dependency>
       <dependency>
          <groupId>us.nineworlds.serenity</groupId>
@@ -167,7 +170,7 @@
    </dependencies>
 
    <build>
-      <finalName>Serenity-${version}</finalName>
+      <finalName>PLEXcast-${project.version}</finalName>
       <plugins>
          <plugin>
             <groupId>com.jayway.maven.plugins.android.generation2</groupId>
@@ -189,8 +192,8 @@
                <zipalign>
                   <verbose>true</verbose>
                   <skip>false</skip>
-                  <inputApk>${project.build.directory}/Serenity-${version}.apk</inputApk>
-                  <outputApk>${project.build.directory}/Serenity-${version}-aligned.apk</outputApk>
+                  <inputApk>${project.build.directory}/PLEXcast-${project.version}.apk</inputApk>
+                  <outputApk>${project.build.directory}/PLEXcast-${project.version}-aligned.apk</outputApk>
                </zipalign>
                <proguard>
                   <skip>true</skip>
@@ -226,6 +229,7 @@
          </plugin>
          <plugin>
             <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
             <configuration>
                <source>1.6</source>
                <target>1.6</target>
