@@ -155,7 +155,7 @@ public class MainMenuTextViewAdapter extends BaseAdapter {
 			return v;
 		}
 
-		return new MainMenuTextView(myContext, R.drawable.serenity_bonsai_logo);
+		return new MainMenuTextView(myContext, R.drawable.plexcast_logo);
 	}
 
 	/**

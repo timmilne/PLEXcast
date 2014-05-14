@@ -170,7 +170,8 @@ public class MainActivity extends SerenityActivity {
 		}
 
 		protected void notification(String tickerText, String expandedText) {
-			int icon = R.drawable.serenity_bonsai_logo;
+			// TPM
+			int icon = R.drawable.plexcast_logo;
 			long when = System.currentTimeMillis();
 			Notification notification = new Notification(icon, tickerText, when);
 			String expandedTitle = "Serenity Download";

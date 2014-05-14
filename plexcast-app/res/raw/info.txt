@@ -1,6 +1,6 @@
-<h1>Serenity for Android</h1>
+<h1>PLEXcast for Android</h1>
 <p>Copyright 2014</p>
 <p>
-https://github.com/NineWorlds/serenity-android
+https://github.com/timmilne/PLEXcast
 </p>
 

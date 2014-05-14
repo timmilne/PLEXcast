@@ -20,7 +20,7 @@
             android:layout_height="36dip"
             android:layout_marginRight="8dip"
             android:scaleType="fitCenter"
-            android:src="@drawable/serenity_bonsai_logo_small"
+            android:src="@drawable/plexcast_logo_small"
             android:visibility="visible" />
 
         <LinearLayout
