@@ -50,6 +50,46 @@ to figure out that I need to add: <version>3.1</version> to
 Here are all the other notes that I took along the way:
 
 
+TPM 5/6/14
+
+Ok, here's a cool way to "install" an apk onto a running emulator:
+
+Execute the emulator (SDK Manager.exe->Tools->Manage AVDs...->New then Start)
+Start the console (Windows XP), Run -> type cmd, and move to the platform-tools folder of SDK directory:
+
+	C:\Users\z018620\Dev\adt\sdk\platform-tools
+
+Paste the APK file in the 'android-sdk\platform-tools' folder.
+Then type the following command.
+
+	adb install [.apk path]
+
+Example:
+
+	adb install C:\Users\Name\MyProject\build\Jorgesys.apk
+
+For this, I had to create an emulator of the right level (not 2.3, but 3.2) and needed to make this the default.
+
+the adb command took a looonnng time, and never really connected, so I needed to learn how to make sure it could see it.
+
+Check out how to use Maven to deploy to an emulator started with mvn android:emulator-start in the following directory:
+
+	C:\Users\z018620\Dev\MavenTutorial\Readme.txt
+
+More on this here:
+
+	http://b2cloud.com.au/how-to-guides/sideloading-android-apps-on-an-emulator/
+
+In particular:
+
+	adb devices (I can see the running device)
+
+Then the adb install .apk work fine.  My app ran, but the serendipity-android one didn't.
+
+I rebooted the emulator several times, and finally got it so sideload and run!!!  Woo Hoo!!
+
+
+
 TPM 5/5/14
 
 Problems addressed today:
